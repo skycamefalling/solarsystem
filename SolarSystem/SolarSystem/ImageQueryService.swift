@@ -12,6 +12,7 @@ import UIKit
 class ImageQueryService {
         
     var imageURLS = [String]()
+    var imageURL = ""
     
     func getPlanetImages(planet: String, completion: @escaping (_ result: [String]) -> Void) {
         var imageURLArray: [String] = []
@@ -38,17 +39,28 @@ class ImageQueryService {
                 let urlString = stringURL.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)!
                 let collectionURL = URL(string: urlString)
                 if let url = collectionURL {
-                    let task = URLSession.shared.dataTask(with: url) { data, response, error in
+                    URLSession.shared.dataTask(with: url) { data, response, error in
                          let json = try! JSONSerialization.jsonObject(with: data!, options: []) as! Array<String>
                          finalHrefs.append(json[0])
-                        completion(finalHrefs)
-                     }
-                    task.resume()
+                         
+                    }.resume()
                 }
             }
+            completion(finalHrefs)
+            
         }
     
+    func changeImage(planet: Planet) {
+        self.imageURL = ""
+        var array = [String]()
+        getPlanetImages(planet: planet.name, completion: { (result) in
+            array = result
+        })
+       // imageURL = array.randomElement()!
+        print("URL \(imageURL)")
+    }
+    
     func printName() {
-        print("name")
+        print("Name")
     }
 }

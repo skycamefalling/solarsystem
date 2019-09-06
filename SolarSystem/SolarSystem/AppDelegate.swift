@@ -16,12 +16,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        let imageService = ImageQueryService()
-        imageService.getPlanetImages(planet: "jupiter", completion: { (result) in
-            self.urls = result
-            print(self.urls)
-        })
-        
+//        let imageService = ImageQueryService()
+//        imageService.getPlanetImages(planet: "jupiter", completion: { (result) in
+//            self.urls = result
+//            //print(self.urls)
+//        })
+    
         return true
     }
 

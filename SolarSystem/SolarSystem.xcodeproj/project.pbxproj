@@ -28,7 +28,6 @@
 		B061F285230F5A0E0006C9B2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B061F283230F5A0E0006C9B2 /* LaunchScreen.storyboard */; };
 		B061F28F230F5D450006C9B2 /* ImageQueryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B061F28E230F5D450006C9B2 /* ImageQueryService.swift */; };
 		B061F29B2310B36F0006C9B2 /* Collection.swift in Sources */ = {isa = PBXBuildFile; fileRef = B061F29A2310B36F0006C9B2 /* Collection.swift */; };
-		B07827DE2315C681007D8F8C /* IMG_2330.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B07827DD2315C681007D8F8C /* IMG_2330.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,7 +54,6 @@
 		B061F286230F5A0E0006C9B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B061F28E230F5D450006C9B2 /* ImageQueryService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageQueryService.swift; sourceTree = "<group>"; };
 		B061F29A2310B36F0006C9B2 /* Collection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Collection.swift; sourceTree = "<group>"; };
-		B07827DD2315C681007D8F8C /* IMG_2330.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_2330.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,7 +86,6 @@
 		B061F277230F5A0C0006C9B2 /* SolarSystem */ = {
 			isa = PBXGroup;
 			children = (
-				B07827DD2315C681007D8F8C /* IMG_2330.jpg */,
 				B061F278230F5A0C0006C9B2 /* AppDelegate.swift */,
 				B061F27A230F5A0C0006C9B2 /* SceneDelegate.swift */,
 				B061F27C230F5A0C0006C9B2 /* ContentView.swift */,
@@ -97,6 +94,7 @@
 				B00A81312319C75600D4AB31 /* PlanetDetails.swift */,
 				B061F28E230F5D450006C9B2 /* ImageQueryService.swift */,
 				B061F29A2310B36F0006C9B2 /* Collection.swift */,
+				B00A81332319CB1900D4AB31 /* PlanetImage.swift */,
 				B061F27E230F5A0E0006C9B2 /* Assets.xcassets */,
 				B00A811E2319BF8500D4AB31 /* earth.png */,
 				B00A81222319BF8600D4AB31 /* jupiter.png */,
@@ -110,7 +108,6 @@
 				B061F283230F5A0E0006C9B2 /* LaunchScreen.storyboard */,
 				B061F286230F5A0E0006C9B2 /* Info.plist */,
 				B061F280230F5A0E0006C9B2 /* Preview Content */,
-				B00A81332319CB1900D4AB31 /* PlanetImage.swift */,
 			);
 			path = SolarSystem;
 			sourceTree = "<group>";
@@ -193,7 +190,6 @@
 				B061F282230F5A0E0006C9B2 /* Preview Assets.xcassets in Resources */,
 				B00A812A2319BF8700D4AB31 /* uranus.png in Resources */,
 				B061F27F230F5A0E0006C9B2 /* Assets.xcassets in Resources */,
-				B07827DE2315C681007D8F8C /* IMG_2330.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

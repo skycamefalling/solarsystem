@@ -9,14 +9,14 @@
 import SwiftUI
 
 struct PlanetImage: View {
-    
+    var image: UIImage
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello World!"/*@END_MENU_TOKEN@*/)
+        Image(uiImage: image)
     }
 }
 
-struct PlanetImage_Previews: PreviewProvider {
-    static var previews: some View {
-        PlanetImage()
-    }
-}
+//struct PlanetImage_Previews: PreviewProvider {
+//    static var previews: some View {
+//        PlanetImage()
+//    }
+//}
